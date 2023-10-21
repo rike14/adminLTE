@@ -35,6 +35,14 @@
               </p>
             </a>
           </li>
+          <li class="nav-item">
+            <a href="/products" class="nav-link">
+              <i class="nav-icon fas fa-user-tie"></i>
+              <p>
+                Products
+              </p>
+            </a>
+          </li>
         </ul>
       </nav>
       <!-- /.sidebar-menu -->

@@ -47,11 +47,11 @@
         <div class="col-lg-12">
           <div class="card ">
             <div class="card-header">
-              <h3 class="card-title">Personal data</h3>
+              <h3 class="card-title">Employee details</h3>
             </div>
             <!-- /.card-header -->
             <!-- form start -->
-            <form action="/employees/store" method="post">
+            <form action="/employees/update" method="post">
               <div class="card-body">
                 <div class="row">
                   <div class="col-lg-6">
@@ -117,7 +117,7 @@
               </div>
               <!-- /.card-body -->
               <div class="card-footer">
-                <button type="submit" class="btn btn-primary">Update</button>
+                <button type="submit" class="btn btn-primary"><i class="fas fa-save"></i> Update</button>
               </div>
             </form>
           </div>

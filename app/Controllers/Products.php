@@ -2,51 +2,50 @@
 
 namespace App\Controllers;
 
-use App\Models\ClientModel;
+use App\Models\ProductModel;
 use CodeIgniter\Controller;
 
-class Clients extends Controller
+class Products extends Controller
 { 
-    private $client_model;
+    private $product_model;
 
     function __construct()
     {
-        $this->client_model = new ClientModel();
+        $this->product_model = new ProductModel();
     }
 
     public function index()
     {
-        $clients = $this->client_model->findAll();
+        $products = $this->product_model->findAll();
 
-
-        $data['clients'] = $clients;
+        $data['products'] = $products;
 
         echo View('templates/header');
 
-        echo View('clients/index', $data);
+        echo View('products/index', $data);
 
         echo View('templates/footer');
 
     }
-    public function newClient()
+    public function newProduct()
     {
         echo View('templates/header');
 
-        echo View('clients/newClient');
+        echo View('products/newProduct');
 
         echo View('templates/footer');
     }
 
-    public function editClient($id_client)
+    public function editProduct($id_product)
     {
-        $client = $this->client_model->where('id_client', $id_client)
+        $product = $this->product_model->where('id_product', $id_product)
                                         ->first();
         
-        $data['client'] = $client;
+        $data['product'] = $product;
 
         echo View('templates/header');
 
-        echo View('clients/editClient', $data);
+        echo View('products/editProduct', $data);
 
         echo View('templates/footer');
     }
@@ -55,60 +54,57 @@ class Clients extends Controller
     {
         $data = $this->request->getVar();
 
-        $this->client_model->insert($data);
+        $this->product_model->insert($data);
 
         $session = session();
         $session->setFlashdata('alert', 'success_create');
 
-        return redirect()->to('/clients');
+        return redirect()->to('/products');
     }
 
     public function update()
     {
         $data = $this->request->getVar();
-
-        if(isset($data['id_client'])):
-            $this->client_model->where('id_client', $data['id_client'])
+        if(isset($data['id_product'])):
+            $this->product_model->where('id_product', $data['id_product'])
             ->set($data)
             ->update();
 
             $session = session();
             $session->setFlashdata('alert', 'success_update');
-
-            return redirect()->to("/clients/editClient/{$data['id_client']}");
+            
+            return redirect()->to("/products/editProduct/{$data['id_product']}");
 
         endif;
 
-
         $session = session();
         $session->setFlashdata('alert', 'error_update');
-
-        return redirect()->to("/clients/editClient/{$data["id_client"]}");
+        return redirect()->to("/products/editProduct/{$data['id_product']}");
     }
 
     public function remove()
     {
-        $id_client = $this->request->getVar('id_client');
+        $id_product = $this->request->getVar('id_product');
 
-        $this->client_model->where('id_client', $id_client)
+        $this->product_model->where('id_product', $id_product)
                             ->delete();
 
         $session = session();
         $session->setFlashdata('alert', 'success_delete');
                         
-        return redirect()->to('/clients');
+        return redirect()->to('/products');
     }
 
-    public function seeClient($id_client)
+    public function seeProduct($id_product)
     {
-        $client = $this->client_model->where('id_client', $id_client)
+        $product = $this->product_model->where('id_product', $id_product)
                                         ->first();
 
-        $data['client'] = $client;
+        $data['product'] = $product;
 
         echo View('templates/header');
 
-        echo View('clients/seeClient', $data);
+        echo View('products/seeProduct', $data);
 
         echo View('templates/footer');
     }

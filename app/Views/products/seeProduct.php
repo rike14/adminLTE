@@ -5,14 +5,14 @@
     <div class="container-fluid">
       <div class="row mb-2">
         <div class="col-sm-6">
-          <h1 class="m-0">Employee data</h1>
+          <h1 class="m-0">Product data</h1>
         </div><!-- /.col -->
         <div class="col-sm-6">
           <ol class="breadcrumb float-sm-right">
-            <a href="/employees" class="btn btn-success" style="margin-right: 15px"> <i class="fas fa-undo"></i> Back</a>
+            <a href="/products" class="btn btn-success" style="margin-right: 15px"> <i class="fas fa-undo"></i> Back</a>
             <li class="breadcrumb-item"><a href="/home">Home</a></li>
-            <li class="breadcrumb-item"><a href="/employees">Employee</a></li>
-            <li class="breadcrumb-item active">Employee data</li>
+            <li class="breadcrumb-item"><a href="/products">Product</a></li>
+            <li class="breadcrumb-item active">Product data</li>
           </ol>
         </div><!-- /.col -->
       </div><!-- /.row -->
@@ -26,64 +26,58 @@
         <div class="col-lg-12">
           <div class="card ">
             <div class="card-header">
-              <h3 class="card-title">Employee details</h3>
+              <h3 class="card-title">Product data</h3>
             </div>
             <!-- /.card-header -->
             <!-- form start -->
             <div class="card-body">
               <div class="row">
-                <div class="col-lg-6">
+                <div class="col-lg-4">
                   <div class="form-group">
                     <label for="">Name</label>
-                    <input type="text" class="form-control" value="<?= $employee['name'] ?>" disabled>
-                  </div>
-                </div>
-                <div class="col-lg-3">
-                  <div class="form-group">
-                    <label for="">Date of birth</label>
-                    <input type="date" class="form-control" value="<?= $employee['date_of_birth'] ?>" disabled>
-                  </div>
-                </div>
-                <div class="col-lg-3">
-                  <div class="form-group">
-                    <label for="">Phone</label>
-                    <input type="text" class="form-control" value="<?= $employee['phone'] ?>" disabled>
-                  </div>
-                </div>
-                <div class="col-lg-3">
-                  <div class="form-group">
-                    <label for="">CPF</label>
-                    <input type="text" class="form-control" value="<?= $employee['CPF'] ?>" disabled>
-                  </div>
-                </div>
-                <div class="col-lg-3">
-                  <div class="form-group">
-                    <label for="">RG</label>
-                    <input type="text" class="form-control" value="<?= $employee['RG'] ?>" disabled>
+                    <input type="text" class="form-control" value="<?= $product['name'] ?>" disabled>
                   </div>
                 </div>
                 <div class="col-lg-8">
                   <div class="form-group">
-                    <label for="">Address</label>
-                    <input type="text" class="form-control" value="<?= $employee['address'] ?>" disabled>
-                  </div>
-                </div>
-                <div class="col-lg-4">
-                  <div class="form-group">
-                    <label for="">Hiring day</label>
-                    <input type="date" class="form-control" value="<?= $employee['hiring_day'] ?>" disabled>
+                    <label for="">Description</label>
+                    <input type="text" class="form-control" value="<?= $product['description'] ?>" disabled>
                   </div>
                 </div>
                 <div class="col-lg-3">
                   <div class="form-group">
-                    <label for="">Role</label>
-                    <input type="text" class="form-control" value="<?= $employee['role'] ?>" disabled>
+                    <label for="">Quantity</label>
+                    <input type="number" class="form-control" value="<?= $product['quantity'] ?>" disabled>
                   </div>
                 </div>
                 <div class="col-lg-3">
                   <div class="form-group">
-                    <label for="">Salary</label>
-                    <input type="text" class="form-control" value="<?= $employee['salary'] ?>" disabled>
+                    <label for="">Quantity min.</label>
+                    <input type="number" class="form-control" value="<?= $product['quantity_min'] ?>" disabled>
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="form-group">
+                    <label for="">Price</label>
+                    <input type="double" class="form-control" value="<?= $product['price'] ?>" disabled>
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="form-group">
+                    <label for="">Price sale</label>
+                    <input type="double" class="form-control" value="<?= $product['price_sale'] ?>" disabled>
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="form-group">
+                    <label for="">Profit</label>
+                    <input type="double" class="form-control" value="<?= $product['profit'] ?>" disabled>
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="form-group">
+                    <label for="">Validity</label>
+                    <input type="date" class="form-control" value="<?= $product['validity'] ?>" disabled>
                   </div>
                 </div>
               </div>

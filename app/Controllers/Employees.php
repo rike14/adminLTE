@@ -54,6 +54,18 @@ class Employees extends Controller
     {
         $data = $this->request->getVar();
 
+        $this->employee_model->insert($data);
+
+        $session = session();
+        $session->setFlashdata('alert', 'success_create');
+
+        return redirect()->to('/employees');
+    }
+
+    public function update()
+    {
+        $data = $this->request->getVar();
+
         if(isset($data['id_employee'])):
             $this->employee_model->where('id_employee', $data['id_employee'])
             ->set($data)
@@ -66,12 +78,11 @@ class Employees extends Controller
 
         endif;
 
-        $this->employee_model->insert($data);
 
         $session = session();
-        $session->setFlashdata('alert', 'success_create');
+        $session->setFlashdata('alert', 'error_update');
 
-        return redirect()->to('/employees');
+        return redirect()->to("/employees/editEmployee/{$data["id_employee"]}");
     }
 
     public function remove()

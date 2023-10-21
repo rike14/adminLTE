@@ -15,24 +15,25 @@
             <div class="col-lg-12">
               <div class="alert alert-success alert-dismissible">
                 <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                Client updated successfully!
+                Product updated successfully!
               </div>
             </div>
           </div>
+          
 
         <?php endif;  ?>
-
+          
       <?php endif;  ?>
 
       <div class="row mb-2">
         <div class="col-sm-6">
-          <h1 class="m-0">Update client</h1>
+          <h1 class="m-0">Update product</h1>
         </div><!-- /.col -->
         <div class="col-sm-6">
           <ol class="breadcrumb float-sm-right">
-            <a href="/clients" class="btn btn-success" style="margin-right: 15px"> <i class="fas fa-undo"></i> Back</a>
-            <li class="breadcrumb-item"><a href="/inicio">Home</a></li>
-            <li class="breadcrumb-item"><a href="/clients">Clients</a></li>
+            <a href="/products" class="btn btn-success" style="margin-right: 15px"> <i class="fas fa-undo"></i> Back</a>
+            <li class="breadcrumb-item"><a href="/home">Home</a></li>
+            <li class="breadcrumb-item"><a href="/products">Product</a></li>
             <li class="breadcrumb-item active">Update</li>
           </ol>
         </div><!-- /.col -->
@@ -47,45 +48,63 @@
         <div class="col-lg-12">
           <div class="card ">
             <div class="card-header">
-              <h3 class="card-title">Personal data</h3>
+              <h3 class="card-title">Product data</h3>
             </div>
             <!-- /.card-header -->
             <!-- form start -->
-            <form action="/clients/update" method="post">
+            <form action="/products/update" method="post">
               <div class="card-body">
                 <div class="row">
-                  <div class="col-lg-6">
+                  <div class="col-lg-4">
                     <div class="form-group">
                       <label for="">Name</label>
-                      <input type="text" class="form-control" name="name" value="<?= $client['name'] ?>">
-                    </div>
-                  </div>
-                  <div class="col-lg-3">
-                    <div class="form-group">
-                      <label for="">Date of birth</label>
-                      <input type="date" class="form-control" name="date_of_birth" value="<?= $client['date_of_birth'] ?>">
-                    </div>
-                  </div>
-                  <div class="col-lg-3">
-                    <div class="form-group">
-                      <label for="">Phone</label>
-                      <input type="text" class="form-control" name="phone" value="<?= $client['phone'] ?>">
+                      <input type="text" class="form-control" name="name" value="<?= $product['name'] ?>">
                     </div>
                   </div>
                   <div class="col-lg-8">
                     <div class="form-group">
-                      <label for="">Address</label>
-                      <input type="text" class="form-control" name="address" value="<?= $client['address'] ?>">
+                      <label for="">Description</label>
+                      <input type="text" class="form-control" name="description" value="<?= $product['description'] ?>">
                     </div>
                   </div>
-                  <div class="col-lg-4">
+                  <div class="col-lg-3">
                     <div class="form-group">
-                      <label for="">Credit limit</label>
-                      <input type="text" class="form-control" name="credit_limit" value="<?= $client['credit_limit'] ?>">
+                      <label for="">Quantity</label>
+                      <input type="number" class="form-control" name="quantity" value="<?= $product['quantity'] ?>">
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="form-group">
+                      <label for="">Quantity min.</label>
+                      <input type="number" class="form-control" name="quantity_min" value="<?= $product['quantity_min'] ?>">
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="form-group">
+                      <label for="">Price</label>
+                      <input type="double" class="form-control" name="price" value="<?= $product['price'] ?>">
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="form-group">
+                      <label for="">Price sale</label>
+                      <input type="double" class="form-control" name="price_sale" value="<?= $product['price_sale'] ?>">
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="form-group">
+                      <label for="">Profit</label>
+                      <input type="double" class="form-control" name="profit" value="<?= $product['profit'] ?>">
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="form-group">
+                      <label for="">Validity</label>
+                      <input type="date" class="form-control" name="validity" value="<?= $product['validity'] ?>">
                     </div>
                   </div>
 
-                  <input type="hidden" name="id_client" value="<?= $client['id_client'] ?>">
+                  <input type="hidden" name="id_product" value="<?= $product['id_product'] ?>">
 
                 </div>
 

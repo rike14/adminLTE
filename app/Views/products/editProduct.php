@@ -31,7 +31,7 @@
         </div><!-- /.col -->
         <div class="col-sm-6">
           <ol class="breadcrumb float-sm-right">
-            <a href="/products" class="btn btn-success" style="margin-right: 15px"> <i class="fas fa-undo"></i> Back</a>
+            <a href="/products" class="btn btn-success" style="margin-right: 15px"> <i class="fas fa-arrow-left"></i> Back</a>
             <li class="breadcrumb-item"><a href="/home">Home</a></li>
             <li class="breadcrumb-item"><a href="/products">Product</a></li>
             <li class="breadcrumb-item active">Update</li>

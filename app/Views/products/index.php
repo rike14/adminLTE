@@ -114,7 +114,7 @@
                                                  <td><?= $product['profit'] ?></td>
                                                  <td><?= $product['validity'] ?></td>
                                                  <td><a href="/products/seeProduct/<?= $product['id_product'] ?>" class="btn btn-info w-100 mb-2"><i class="fas fa-search"></i></a>
-                                                     <a href="/products/editProduct/<?= $product['id_product'] ?>" class="btn btn-warning w-100 mb-2"><i class="fas fa-user-edit"></i></a>
+                                                     <a href="/products/editProduct/<?= $product['id_product'] ?>" class="btn btn-warning w-100 mb-2"><i class="fas fa-edit"></i></a>
                                                      <button type="button" class="btn btn-danger w-100" onclick="document.getElementById('id_product').value='<?= $product['id_product'] ?>'" data-toggle="modal" data-target="#modal-lg"><i class="fas fa-trash"></i></button>
                                                  </td>
                                              </tr>

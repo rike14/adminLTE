@@ -15,7 +15,7 @@
               <div class="col-lg-12">
                 <div class="alert alert-success alert-dismissible">
                     <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                  Cliente atualizado com sucesso!
+                  Client updated successfully!
                   </div>
               </div>
             </div>
@@ -26,14 +26,14 @@
 
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">Atualizar Cliente</h1>
+            <h1 class="m-0">Update client</h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <a href="/clientes" class="btn btn-success" style="margin-right: 15px">  <i class="fas fa-undo"></i>   Voltar</a>
-              <li class="breadcrumb-item"><a href="/inicio">Início</a></li>
-              <li class="breadcrumb-item"><a href="/clientes">Clientes</a></li>
-              <li class="breadcrumb-item active">Atualizar</li>
+              <a href="/clients" class="btn btn-success" style="margin-right: 15px">  <i class="fas fa-undo"></i>   Back</a>
+              <li class="breadcrumb-item"><a href="/inicio">Home</a></li>
+              <li class="breadcrumb-item"><a href="/clients">Clients</a></li>
+              <li class="breadcrumb-item active">Update</li>
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
@@ -47,45 +47,45 @@
          <div class="col-lg-12">
               <div class="card ">
               <div class="card-header">
-                <h3 class="card-title">Dados Pessoais</h3>
+                <h3 class="card-title">Personal data</h3>
               </div>
               <!-- /.card-header -->
               <!-- form start -->
-              <form action="/clientes/store" method="post">
+              <form action="/clients/store" method="post">
                 <div class="card-body">
                  <div class="row">
                      <div class="col-lg-6">
                            <div class="form-group">
-                            <label for="">Nome</label>
-                             <input type="text" class="form-control"  name="nome" value="<?= $cliente['nome'] ?>">
+                            <label for="">Name</label>
+                             <input type="text" class="form-control"  name="name" value="<?= $client['name'] ?>">
                         </div>
                      </div>
                      <div class="col-lg-3">
                            <div class="form-group">
-                            <label for="">Data de Nascimento</label>
-                             <input type="date" class="form-control"  name="data_de_nascimento" value="<?= $cliente['data_de_nascimento'] ?>">
+                            <label for="">Date of birth</label>
+                             <input type="date" class="form-control"  name="date_of_birth" value="<?= $client['date_of_birth'] ?>">
                         </div>
                      </div>
                      <div class="col-lg-3">
                            <div class="form-group">
-                            <label for="">Telefone</label>
-                             <input type="text" class="form-control"  name="telefone" value="<?= $cliente['telefone'] ?>">
+                            <label for="">Phone</label>
+                             <input type="text" class="form-control"  name="phone" value="<?= $client['phone'] ?>">
                         </div>
                      </div>
                       <div class="col-lg-8">
                            <div class="form-group">
-                            <label for="">Endereço</label>
-                             <input type="text" class="form-control"  name="endereco" value="<?= $cliente['endereco'] ?>">
+                            <label for="">Address</label>
+                             <input type="text" class="form-control"  name="address" value="<?= $client['address'] ?>">
                         </div>
                      </div>
                      <div class="col-lg-4">
                            <div class="form-group">
-                            <label for="">Limite de Crédito</label>
-                             <input type="text" class="form-control"  name="limite_de_credito" value="<?= $cliente['limite_de_credito'] ?>">
+                            <label for="">Credit limit</label>
+                             <input type="text" class="form-control"  name="credit_limit" value="<?= $client['credit_limit'] ?>">
                         </div>
                      </div>
 
-                    <input type="hidden" name="id_cliente" value="<?= $cliente['id_cliente'] ?>">
+                    <input type="hidden" name="id_client" value="<?= $client['id_client'] ?>">
 
                  </div>
                   
@@ -93,7 +93,7 @@
                 </div>
                 <!-- /.card-body -->
                   <div class="card-footer">
-                  <button type="submit" class="btn btn-primary">Atualizar</button>
+                  <button type="submit" class="btn btn-primary">Update</button>
                 </div>
               </form>
             </div>

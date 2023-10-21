@@ -4,37 +4,37 @@ namespace App\Database\Migrations;
 
 use CodeIgniter\Database\Migration;
 
-class Clientes extends Migration
+class Clients extends Migration
 {
     public function up()
     {
        $this->forge->addField([
-           'id_cliente' => [
+           'id_client' => [
                'type' => 'INT',
                'constraint' => 9,
                'usigned' => true,
                'auto_increment' => true,
            ],
-           'nome' => [
+           'name' => [
                'type' => 'VARCHAR',
                'constraint' => 128
            ],
-           'data_de_nascimento' => [
+           'date_of_birth' => [
                'type' => 'DATE'
            ],
            'CPF' => [
                'type' => 'VARCHAR',
                'constraint' =>11
            ],
-           'telefone' => [
+           'phone' => [
                'type' => 'VARCHAR',
                'constraint' => 32
            ],
-           'endereco' => [
+           'address' => [
                'type' => 'VARCHAR',
                'constraint' => 128
            ],
-           'limite_de_credito' => [
+           'credit_limit' => [
                'type' => 'DOUBLE'
            ],
            'created_at' => [
@@ -47,12 +47,12 @@ class Clientes extends Migration
                'type' => 'DATETIME'
            ]
            ]);
-           $this->forge->addKey('id_cliente', true);
-           $this->forge->createTable('clientes');
+           $this->forge->addKey('id_client', true);
+           $this->forge->createTable('clients');
     }
 
     public function down()
     {
-        $this->forge->dropTable('clientes');
+        $this->forge->dropTable('clients');
     }
 }

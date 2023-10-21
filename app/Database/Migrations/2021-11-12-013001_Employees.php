@@ -4,22 +4,22 @@ namespace App\Database\Migrations;
 
 use CodeIgniter\Database\Migration;
 
-class Funcionarios extends Migration
+class Employees extends Migration
 {
    public function up()
     {
        $this->forge->addField([
-           'id_funcionario' => [
+           'id_employee' => [
                'type' => 'INT',
                'constraint' => 9,
                'usigned' => true,
                'auto_increment' => true,
            ],
-           'nome' => [
+           'name' => [
                'type' => 'VARCHAR',
                'constraint' => 128
            ],
-           'data_de_nascimento' => [
+            'date of birth' => [
                'type' => 'DATE'
            ],
            'CPF' => [
@@ -32,26 +32,23 @@ class Funcionarios extends Migration
                'constraint' =>32
             
            ],
-           'telefone' => [
+           'phone' => [
                'type' => 'VARCHAR',
                'constraint' => 32
            ],
-           'endereco' => [
+           'address' => [
                'type' => 'VARCHAR',
                'constraint' => 128
            ],
-           'data_de_contratacao' => [
+           'hiring_day' => [
                'type' => 'DATE'
            ],
-           'cargo' => [
+           'role' => [
                'type' => 'VARCHAR',
                'constraint' => 128
            ],
-           'salario' => [
+           'salary' => [
                'type' => 'DOUBLE'
-           ],
-           'dia_de_pagamento' => [
-               'type' => 'INT'
            ],
            'created_at' => [
                'type' => 'DATETIME'
@@ -63,12 +60,12 @@ class Funcionarios extends Migration
                'type' => 'DATETIME'
            ]
            ]);
-           $this->forge->addKey('id_funcionario', true);
-           $this->forge->createTable('funcionarios');
+           $this->forge->addKey('id_employee', true);
+           $this->forge->createTable('employees');
     }
 
     public function down()
     {
-        $this->forge->dropTable('funcionarios');
+        $this->forge->dropTable('employees');
     }
 }

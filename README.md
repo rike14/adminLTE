@@ -1,54 +1,46 @@
-# CodeIgniter 4 Framework
 
-## What is CodeIgniter?
+ # Codeigniter4
+<p align="center">
+  <img src="http://2.bp.blogspot.com/-XiMuRF2uafk/VUQkbriuMMI/AAAAAAAAAJg/xk41YtbJE1E/s1600/codeigniter-logo.png" width="100%" height="400" alt="accessibility text">
+</p>
 
-CodeIgniter is a PHP full-stack web framework that is light, fast, flexible and secure.
-More information can be found at the [official site](https://codeigniter.com).
+## I Started progress PHP language, so i learning about framework CodeIgniter 4! <br><br><br>
+----------------------------
 
-This repository holds the distributable version of the framework.
-It has been built from the
-[development repository](https://github.com/codeigniter4/CodeIgniter4).
+- ### Home page :wink:
 
-More information about the plans for version 4 can be found in [CodeIgniter 4](https://forum.codeigniter.com/forumdisplay.php?fid=28) on the forums.
+<img src="public/images/home.png" width="100%" height="400" alt="accessibility text"> <br>
 
-The user guide corresponding to the latest version of the framework can be found
-[here](https://codeigniter4.github.io/userguide/).
+-----------------------------
 
-## Important Change with index.php
+- ### Client page :boom:
 
-`index.php` is no longer in the root of the project! It has been moved inside the *public* folder,
-for better security and separation of components.
+<img src="public/images/clients.png" width="100%" height="400" alt="accessibility text"> <br>
 
-This means that you should configure your web server to "point" to your project's *public* folder, and
-not to the project root. A better practice would be to configure a virtual host to point there. A poor practice would be to point your web server to the project root and expect to enter *public/...*, as the rest of your logic and the
-framework are exposed.
+-----------------------------
 
-**Please** read the user guide for a better explanation of how CI4 works!
+- ### View clients saved on sql page :boom:
 
-## Repository Management
+<img src="public/images/see.png" width="100%" height="400" alt="accessibility text"> <br>
 
-We use GitHub issues, in our main repository, to track **BUGS** and to track approved **DEVELOPMENT** work packages.
-We use our [forum](http://forum.codeigniter.com) to provide SUPPORT and to discuss
-FEATURE REQUESTS.
+-----------------------------
 
-This repository is a "distribution" one, built by our release preparation script.
-Problems with it can be raised on our forum, or as issues in the main repository.
+- ### Edit client page :boom:
 
-## Contributing
+<img src="public/images/edit.png" width="100%" height="400" alt="accessibility text"> <br>
 
-We welcome contributions from the community.
+-----------------------------
 
-Please read the [*Contributing to CodeIgniter*](https://github.com/codeigniter4/CodeIgniter4/blob/develop/CONTRIBUTING.md) section in the development repository.
+- ### Insert new client page :boom:
 
-## Server Requirements
+<img src="public/images/register.png" width="100%" height="400" alt="accessibility text"> <br>
 
-PHP version 7.4 or higher is required, with the following extensions installed:
+-----------------------------
 
-- [intl](http://php.net/manual/en/intl.requirements.php)
-- [mbstring](http://php.net/manual/en/mbstring.installation.php)
+- ### Delete client page :boom:
 
-Additionally, make sure that the following extensions are enabled in your PHP:
+<img src="public/images/delete.png" width="100%" height="400" alt="accessibility text"> <br>
 
-- json (enabled by default - don't turn it off)
-- [mysqlnd](http://php.net/manual/en/mysqlnd.install.php) if you plan to use MySQL
-- [libcurl](http://php.net/manual/en/curl.requirements.php) if you plan to use the HTTP\CURLRequest library
+-----------------------------
+
+Cya 😜

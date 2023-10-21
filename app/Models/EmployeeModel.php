@@ -4,18 +4,21 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class ClienteModel extends Model
+class EmployeeModel extends Model
 {
-    protected $table = 'clientes';
-    protected $primaryKey = 'id_cliente';
+    protected $table = 'employees';
+    protected $primaryKey = 'id_employee';
     protected $allowedFields = [
-        'id_cliente',
-        'nome',
-        'data_de_nascimento',
+        'id_employee',
+        'name',
+        'date_of_birth',
         'CPF',
-        'telefone',
-        'endereco',
-        'limite_de_credito',
+        'RG',
+        'phone',
+        'address',
+        'hiring_day',
+        'role',
+        'salary',
     ];
 
     protected $useTimestamps = true;

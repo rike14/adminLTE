@@ -1,3 +1,18 @@
+<?php 
+
+  $session = session();
+
+$firstName = $session->get('first_name');
+
+  if(empty($firstName)){
+
+    echo "<script>
+            alert('You are not logged in');
+            window.location.href = '/login';
+         </script>";
+  }
+
+?>
 <!DOCTYPE html>
 <!--
 This is a starter template page. Use this page to start your new project from

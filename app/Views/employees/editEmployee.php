@@ -69,13 +69,13 @@
                   <div class="col-lg-3">
                     <div class="form-group">
                       <label for="">CPF</label>
-                      <input type="date" class="form-control" name="CPF" value="<?= $employee['CPF'] ?>">
+                      <input type="text" class="form-control" name="CPF" value="<?= $employee['CPF'] ?>">
                     </div>
                   </div>
                   <div class="col-lg-3">
                     <div class="form-group">
                       <label for="">RG</label>
-                      <input type="date" class="form-control" name="RG" value="<?= $employee['RG'] ?>">
+                      <input type="text" class="form-control" name="RG" value="<?= $employee['RG'] ?>">
                     </div>
                   </div>
                   <div class="col-lg-3">
@@ -105,7 +105,7 @@
                   <div class="col-lg-4">
                     <div class="form-group">
                       <label for="">Salary</label>
-                      <input type="text" class="form-control" name="salary" value="<?= $employee['salary'] ?>">
+                      <input type="number" step="0.01" class="form-control" name="salary" value="<?= $employee['salary'] ?>">
                     </div>
                   </div>
 

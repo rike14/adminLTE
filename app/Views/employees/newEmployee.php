@@ -84,7 +84,7 @@
                   <div class="col-lg-3">
                     <div class="form-group">
                       <label for="">Salary</label>
-                      <input type="text" class="form-control" name="salary">
+                      <input type="number" step="0.01" class="form-control" name="salary">
                     </div>
                   </div>
                 </div>

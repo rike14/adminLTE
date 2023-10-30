@@ -65,7 +65,7 @@ class Employees extends Controller
     public function update()
     {
         $data = $this->request->getVar();
-
+        
         if(isset($data['id_employee'])):
             $this->employee_model->where('id_employee', $data['id_employee'])
             ->set($data)
@@ -74,7 +74,7 @@ class Employees extends Controller
             $session = session();
             $session->setFlashdata('alert', 'success_update');
 
-            return redirect()->to("/employee/editEmployee/{$data['id_employee']}");
+            return redirect()->to("/employees/editEmployee/{$data['id_employee']}");
 
         endif;
 

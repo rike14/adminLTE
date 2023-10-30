@@ -84,7 +84,7 @@
              </div>
              <!-- /.card-header -->
              <div class="card-body">
-               <table class="table table-bordered">
+               <table id="example1" class="table table-bordered">
                  <thead>
                    <tr>
                      <th style="width: 10px">ID:</th>
@@ -109,7 +109,7 @@
                          <td><?= $client['credit_limit'] ?></td>
                          <td><a href="/clients/seeClient/<?= $client['id_client'] ?>" class="btn btn-info w-100 mb-2"><i class="fas fa-search"></i></a>
                            <a href="/clients/editClient/ <?= $client['id_client'] ?>" class="btn btn-warning w-100 mb-2"><i class="fas fa-user-edit"></i></a>
-                           <button type="button" class="btn btn-danger" onclick="document.getElementById('id_client').value='<?= $client['id_client'] ?>'" data-toggle="modal" data-target="#modal-lg"><i class="fas fa-trash"></i></button>
+                           <button type="button" class="btn btn-danger w-100" onclick="document.getElementById('id_client').value='<?= $client['id_client'] ?>'" data-toggle="modal" data-target="#modal-lg"><i class="fas fa-trash"></i></button>
                          </td>
                        </tr>
 

@@ -60,19 +60,19 @@
                                     <div class="col-lg-3">
                                         <div class="form-group">
                                             <label for="">Price</label>
-                                            <input type="double" class="form-control" name="price">
+                                            <input type="number" step="0.01" class="form-control" name="price">
                                         </div>
                                     </div>
                                     <div class="col-lg-3">
                                         <div class="form-group">
                                             <label for="">Price sale</label>
-                                            <input type="double" class="form-control" name="price_sale">
+                                            <input type="number" step="0.01" class="form-control" name="price_sale">
                                         </div>
                                     </div>
                                     <div class="col-lg-3">
                                         <div class="form-group">
                                             <label for="">Profit</label>
-                                            <input type="double" class="form-control" name="profit">
+                                            <input type="number" step="0.01" class="form-control" name="profit">
                                         </div>
                                     </div>
                                     <div class="col-lg-3">

@@ -81,7 +81,7 @@
                   <div class="col-lg-4">
                     <div class="form-group">
                       <label for="">Credit limit</label>
-                      <input type="text" class="form-control" name="credit_limit" value="<?= $client['credit_limit'] ?>">
+                      <input type="number" step="0.01" class="form-control" name="credit_limit" value="<?= $client['credit_limit'] ?>">
                     </div>
                   </div>
 

@@ -19,7 +19,7 @@ class Employees extends Migration
                'type' => 'VARCHAR',
                'constraint' => 128
            ],
-            'date of birth' => [
+            'date_of_birth' => [
                'type' => 'DATE'
            ],
            'CPF' => [

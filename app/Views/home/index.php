@@ -196,7 +196,7 @@ $firstName = $session->get('first_name');
                 }
                 ?>],
       datasets: [{
-        backgroundColor: ["#3e95cd", "#8e5ea2", "#3cba9f"],
+        backgroundColor: ["#3e95cd", "#8e5ea2", "#3cba9f", "#e8c3b9", "#c45850", ],
         data: [<?php foreach ($products as $product) {
                   echo $product['quantity'] . ",";
                 }

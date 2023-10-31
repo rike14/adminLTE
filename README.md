@@ -9,7 +9,7 @@
 
 - ### Home page :wink:
 
-<img src="public/images/home.png" width="100%" height="400" alt="accessibility text"> <br>
+<img src="public/images/home.gif" width="100%" height="400" alt="accessibility text"> <br>
 
 -----------------------------
 

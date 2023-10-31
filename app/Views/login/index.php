@@ -2,7 +2,7 @@
 
 $session = session();
 
-$alert = $session->get('alert');
+$alert = $session->get('error');
 
 ?>
 

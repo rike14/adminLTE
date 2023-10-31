@@ -80,7 +80,7 @@
          <div class="col-lg-12">
            <div class="card">
              <div class="card-header">
-               <a href="employees/newEmployee" class="btn btn-info"><i class="fas fa-user-plus"></i> New employee</a>
+               <a href="employees/newEmployee" class="btn btn-info"><i class="fas fa-user-plus pr-2"></i> New employee</a>
              </div>
              <!-- /.card-header -->
              <div class="card-body">

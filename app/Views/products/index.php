@@ -10,7 +10,7 @@
                  </div>
                  <div class="modal-body">
                      <p>Are you sure do you want remove this products?!&hellip;</p>
-                     
+
                      <input type="hidden" id="id_product" name="id_product" value="">
                  </div>
                  <div class="modal-footer justify-content-between">
@@ -81,7 +81,7 @@
                  <div class="col-lg-12">
                      <div class="card">
                          <div class="card-header">
-                             <a href="products/newProduct" class="btn btn-info"><i class="fas fa-user-plus"></i> New product</a>
+                             <a href="products/newProduct" class="btn btn-info"><i class="fas fa-box-open pr-2"></i> New product</a>
                          </div>
                          <!-- /.card-header -->
                          <div class="card-body">

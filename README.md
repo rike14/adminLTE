@@ -21,7 +21,7 @@
 
 -----------------------------
 
-- ### Client page CRUD - (Create/Read/Update/Delete) :boom:
+- ### Clients page CRUD - (Create/Read/Update/Delete) :boom:
 
 <img src="public/images/clients.gif" width="100%" height="400" alt="accessibility text"> <br>
 
